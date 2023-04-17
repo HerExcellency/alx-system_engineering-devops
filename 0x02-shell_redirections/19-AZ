@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "This is an example string with A's and c's." | tr 'Ac' 'Ze'
