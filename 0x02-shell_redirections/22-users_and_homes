@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Users and Home Directories (sorted by users):"; awk -F: '{printf "User: %s\tHome Directory: %s\n", $1, $6}' /etc/passwd | sort -k2
+cut -d ':' -f 1,6 /etc/passwd | sort
